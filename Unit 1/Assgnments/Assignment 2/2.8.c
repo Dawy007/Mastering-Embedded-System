@@ -2,24 +2,32 @@
 int main()
 {
     char o;
-    float x, y, res;
+    float x, y;
     printf("Enter an Operator either + or - or * or / : ");
     fflush(stdout);
     scanf(" %c", &o);
     printf("Enter Two Operands: ");
     fflush(stdout);
     scanf("%f %f", &x, &y);
-    if ('+' == o)
-        res = x + y;
-    else if ('-' == o)
-        res = x - y;
-    else if ('*' == o)
-        res = x * y;
-    else if ('/' == o)
-        res = x / y;
-    else
+    switch (o)
+    {
+    case '+':
+        printf("%.1f + %.1f = %.1f", x, y, x + y);
+        break;
+    case '-':
+        printf("%.1f - %.1f = %.1f", x, y, x - y);
+        break;
+    case '*':
+        printf("%.1f * %.1f = %.1f", x, y, x * y);
+        break;
+    case '/':
+        printf("%.1f / %.1f = %.1f", x, y, x / y);
+        break;
+
+    default:
         printf("Error Not a valid operator");
-    printf("%f %c %f = %f", x, o, y, res);
+        break;
+    }
 
     return 0;
 }
