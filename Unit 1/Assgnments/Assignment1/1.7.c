@@ -1,12 +1,12 @@
 #include <stdio.h>
-int main() {
-    int x,y;
+
+int main()
+{
+    int x, y;
     printf("Enter Value of a: ");
-    fflush(stdin);
     fflush(stdout);
     scanf("%d", &x);
     printf("Enter Value of b: ");
-    fflush(stdin);
     fflush(stdout);
     scanf("%d", &y);
     x = x * y;
