@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ctype.h>
 int main() {
     int x,y,z;
     printf("Enter Three Numbers: ");
