@@ -1,8 +1,9 @@
 #include <stdio.h>
 
-int main() {
-    
-    printf("C Programming");
+int main()
+{
+
+    printf("C Progrmming");
 
     return 0;
 }
