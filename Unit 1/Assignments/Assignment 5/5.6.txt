@@ -1,0 +1,3 @@
+Output:
+size of union: 32      union size is the max size of variables inside and it overlaps and stores only ine variable.
+size of structure: 40  structure size is the sum of all variables inside it.
