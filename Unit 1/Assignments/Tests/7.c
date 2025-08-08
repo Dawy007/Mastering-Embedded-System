@@ -1,15 +1,17 @@
 #include <stdio.h>
 
-void myfun();
-int main()
+void begin(void);
+void finish(void);
+
+void __attribute__((constructor)) begin();
+void __attribute__((destructor)) finish();
+
+void begin(void)
 {
-    char result = myfun();
-    printf("Result: %c\n", result);
-    return 0;
+    printf("Hello, this runs without main!\n");
 }
-void myfun(int arr[])
+
+void finish(void)
 {
-    int size = sizeof(arr) / sizeof(arr[0]);
-    printf("Size of array: %d\n", size);
-    return 10;
+    printf("Goodbye, program ended.\n");
 }
